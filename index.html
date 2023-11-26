@@ -10,28 +10,120 @@
 	</head>
 
     <body>
+        <!-- Haut de ma page -->
+        <div id="Top">
+            <header>
+                <div id="image-entete">
+                    <img src="images/Image-entete.jpg" alt="Image du bâtiment de la galerie DEDAL DES COULEURS"/>
+                </div>
+            </header>
 
-        <header>
-            <div id="image-entete">
-                <img src="images/Image-entete.jpg" alt="Image du bâtiment de la galerie DEDAL DES COULEURS"/>
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Préparez votre visite</a></li>
+                        <li><a href="#">Exposition du moment</a></li>
+                        <li><a href="#">S'inscrire</a></li>
+                    </ul>
+                </nav>
+
+                <hr>   
+        </div>
+
+        <section id="expo-du-moment">
+            <h1>Exposition du moment</h1>
+            <div class="photo-expo">
+                <img src="images/image1-Expo-VVG.jpg" alt="Photo de l'exposition Lumières de Provence"/>
             </div>
+            <div class="texte-presentation-expo">
+                <h2>Lumières de Provence : La magie de Van Gogh</h2>
+                <p>Vernissage : 5 avril 2023</p>
+                <p>Ouverture au public : Du 6 avril au 30 juin 2023</p>
+                <button>En savoir plus</button>
+            </div>
+        </section>
 
-            <nav>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Préparez votre visite</a></li>
-                    <li><a href="#">Exposition du moment</a></li>
-                    <li><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
-        </header>
+        <section id="preparez-votre-visite">
+            <h1>Préparez votre visite</h1>
+            <div class="colonnes">
+                <div class="colonne-notre-galerie">
+                    <span class="icone-musee"><i class="fa-solid fa-building-columns"></i></span>
+                    <h3>Notre galerie</h3>
+                </div>
+
+                <div class="colonne-horaires-tarifs">
+                    <span class="icone-horloge"><i class="fa-solid fa-clock"></i></span>
+                    <h3>Horaires et tarifs</h3>
+                </div>
+
+                <div class="colonne-services-sur-place">
+                    <span class="icone-info"><i class="fa-solid fa-circle-info"></i></span>
+                    <h3>Services sur place</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="inscription-newsletter">
+            <h1>Incription à notre newsletter</h1>
+            <div class="newsletter">
+                <div class="texte-newsletter">
+                    <p>Pour suivre toute l’actualité du musée DEDAL DES COULEURS inscrivez-vous ici ! Événements, expositions, informations pratiques... Vous recevrez notre newsletter et à vous pouvez à tout moment vous désinscrire.</p>
+                    <img src="images/Logo-DDC.png" alt="Logo DDC"/>
+                </div>
+                <div class="formulaire">
+                    <form>
+                        <div id="bloc0">
+                            <p class="zone1">Nom :</p>
+                            <p class="zone2">Prénom :</p>
+                            <p class="zone1">Adresse Mail :</p>
+                        </div>
+                        <div id="bloc1">
+                            <p class="zone0"><input type="text" name="nom" placeholder="Indiquez votre nom" required/></p>
+                            <p class="zone0"><input type="text" name="prenom" placeholder="Indiquez votre prénom"/></p>
+                            <p class="zone0"><input type="mail" name="mail" placeholder="Indiquez votre adresse mail" required/></p>
+                            <p class="zone01"><input type="checkbox" name="sexe" value="abonnement" required/>Je m'abonne à la newsletter ! Désabonnement disponible dans chaque envoi. </p>
+                            <p class="zone0"><input type="submit" id="envoi" value="Je m'abonne"/></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
 
 
-
-
-
-
+        <footer>
+            <div class="colonne-pdp">
+                <div class="logo-pdp">
+                    <img src="images/Logo-DDC.png" alt="Logo DDC"/>
+                </div>
+                <div class="contact">
+                    <h2>Nous contacter</h2>
+                    <p>10 Rue de la République <br> 75000 Paris</p>
+                    <span class="contact-telephone">
+                        <span class="icone-telephone"><i class="fa-solid fa-phone"></i></span>
+                        <p>01.63.45.85.56</p>
+                    </span>
+                    <span id="contact-fax">
+                        <span class="icone-fax"><i class="fa-solid fa-fax"></i></span>
+                        <p>01.63.45.78.52</p>
+                    </span>
+                    <span id="contact-mail">
+                        <span class="icone-mail"><i class="fa-solid fa-envelope"></i></span>
+                        <p>dedal@gmail.com</p> 
+                    </span>
+                    <p>Responsable : M. Paul DECHEWSKY</p>
+                </div>
+                <div class="mentions-legales">
+                    <p>Mentions légales</p>
+                    <p>Gestion des cookies</p>
+                    <span id="logo-reseaux-sociaux">
+                        <span class="icone-facebook"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="icone-x"><i class="fa-brands fa-x-twitter"></i></span>
+                        <span class="icone-instagram"><i class="fa-brands fa-instagram"></i></span>
+                    </span>
+                </div>
+            </div>
+        </footer>
 
     </body>
 
