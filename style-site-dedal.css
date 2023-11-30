@@ -1,0 +1,419 @@
+body{
+	margin: 0;
+	padding:0;
+}
+
+
+h1{
+	font-family: 'Sansation', sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+}
+
+#soulignement-titre{
+	text-decoration-color: #C3185A;
+}
+
+h2{
+	font-family: 'Sansation', sans-serif;
+	font-weight: bold;
+	font-size: 35px;
+	margin-left: 40px;
+	margin-top: 3em;
+}
+
+h3{
+	font-family: 'Sansation', sans-serif;
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+p{
+	font-family: 'Open sans';
+	font-size: 25px;
+}
+
+button{
+	background-color: #F2FAFF;
+  border: 3px solid #C3185A;
+  border-radius: 15px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Sansation', sans-serif;
+}
+
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #C3185A;
+  color: white;
+}
+
+
+
+
+
+/* en-tête */
+.top{
+	display: flex;
+	text-align: center;
+	color: white;
+	max-width:100%;
+ }
+
+
+.page1 header img{
+	width:100%;
+	vertical-align: middle;
+	height: auto;
+}
+
+.page2 header, .page3 header{
+	background-color: #F2FAFF;
+}
+.page2 header img, .page3 header img{
+	width: 10%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar {
+  background-color: #F2FAFF;
+  border-bottom: 3px solid #3E2E8E;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+
+.navbar a {
+  color: #3E2E8E;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Sansation', sans-serif;
+}
+
+
+.navbar a:hover {
+  color: #F75022;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.page1 .accueil, .page2 .visite, .page3 .expo{
+	color:#F75022;
+}
+
+
+
+/* page 1 */
+
+/* Exposition du moment */
+.exposition-du-moment{
+	background-color: #F2FAFF;
+	padding: 30px;
+	display: flex;
+}
+/* Sidebar/left column */
+.exposition-du-moment .photo-expo{
+	flex: 30%;
+}
+.photo-expo img{
+	width:40em;
+	padding-left: 30px;
+}
+/* Main column */
+.exposition-du-moment .texte-presentation-expo{
+	  flex: 40%;
+	  text-align: center;
+}
+.vernissage, .ouverture-public{
+	font-size: 35px;
+	padding-top: 5em;
+}
+.ouverture-public{
+	padding-bottom: 5em;
+}
+
+/* Préparez votre visite */
+.colonnes{
+	background-color: black;
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	padding: 50px;
+}
+.icone-musee, .icone-horloge, .icone-info{
+	color: white;
+	font-size: 7em;
+}
+.colonne-notre-galerie{
+	text-align: center;
+	padding:30px;
+}
+.colonne-notre-galerie:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #C3185A;
+  color: white;
+  border-radius: 15px;
+}
+.colonne-horaires-tarifs{
+	text-align: center;
+	padding:30px;
+}
+.colonne-horaires-tarifs:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #C3185A;
+  color: white;
+  border-radius: 15px;
+}
+.colonne-services-sur-place{
+	text-align: center;
+	padding:30px;
+}
+.colonne-services-sur-place:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #C3185A;
+  color: white;
+  border-radius: 15px;
+}
+
+/* Inscription newsletter */
+.newsletter{
+	background-color: #F2FAFF;
+	padding: 30px;
+	display: flex;
+}
+.texte-newsletter{
+	flex:30%;
+	text-align: center;
+}
+.texte-newsletter img{
+	width: 20em;
+}
+.formulaire{
+	flex:40%;
+	margin-left:50px;
+}
+.formulaire .zone1{
+	color:#022D8C;
+	font-weight: bold;
+}
+.formulaire input[type="text"], input[type="mail"] {
+	border:none;
+	padding: 20px;
+	width:50em;
+	font-weight: bold;
+	color:black;
+}
+.formulaire input[type="submit"]{
+	background-color: #F2FAFF;
+  border: 3px solid #C3185A;
+  border-radius: 15px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Sansation', sans-serif;
+}
+.formulaire input[type="submit"]:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #C3185A;
+  color: white;
+}
+.formulaire .zone3{
+	color:#022D8C;
+	font-size: 20px;
+	padding-left: 10px;
+}
+.formulaire p {
+	position: relative;
+}
+[type="checkbox"]:not(:checked), 
+[type="checkbox"]:checked {
+	left: 0;
+}
+[type="checkbox"]:not(:checked)   label,
+[type="checkbox"]:checked   label {
+	padding-left: 2.3em;
+	font-size: 1.05em;
+	line-height: 1.7;
+	cursor: pointer; 
+}
+
+
+
+
+/* page 2 */
+.page2 .titre-page img{
+	width:100%;
+	vertical-align: middle;
+	height: 300px;
+	opacity: 0.5;
+}
+.titre-page{
+  background-color: grey;
+  background-image: url(images/preparez-votre-visite3.png);
+  background-position: center;
+  background-size: cover;
+  color: black;
+  padding: 1em;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+
+.bloc-presentation-de-la-galerie{
+	background-color: #F2FAFF;
+	padding: 30px;
+}
+.bloc-presentation-de-la-galerie h3{
+	text-align: center;
+}
+.texte-presentation-et-paul{
+	display: flex;
+}
+.texte-presentation-et-paul p{
+	flex:50%;
+	text-indent: 5%;
+}
+.texte-presentation-et-paul img{
+	width: 15%;
+	clip-path:ellipse(50% 50%);
+}
+.images-galerie{
+	display: flex;
+	justify-content: space-around;
+}
+.images-galerie img{
+	padding: 10px;
+	width: 50%;
+}
+.bloc-horaires-et-tarifs{
+	background-color: #F2FAFF;
+	padding: 30px;
+}
+.bloc-horaires-et-tarifs h3{
+	text-align: center;
+}
+.bloc-image-texte-horaires img{
+	width: 15%;
+	clip-path:ellipse(50% 50%);
+	margin-right: 10em;
+	margin-bottom: 40px;
+}
+.bloc-image-texte-horaires{
+	display: flex;
+	text-indent: 5%;
+}
+hr{
+	height: 3px;
+  background-color: #C3185A;
+  border: none;
+}
+table{
+	table-layout: fixed;
+  width: 50%;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+	background-color: black;
+	margin-top: 100px;
+	color: white;
+}
+
+footer p{
+	font-size: 20px;
+}
+
+footer .contact i{
+	color: #35ADDE;
+	padding-right: 30px;
+}
+
+footer .colonne-pdp{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer img{
+	width:20em;
+}
+
+footer .contact{
+text-align: center;
+}
+
+footer #contact-telephone, #contact-fax, #contact-mail{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .mentions-legales #logo-reseaux-sociaux i{
+	font-size: 30px;
+	padding: 30px 30px 0px 30px;
+	margin-top: 0.2em;
+	opacity: 0.7;
+}
+
+footer .mentions-legales #logo-reseaux-sociaux i:hover{
+	opacity: 1;
+}
+
+footer .mentions-legales p:hover{
+	text-decoration: underline;
+}
+
+footer .mail{
+	color:white;
+	text-decoration: none;
+}
+
+footer .mail:hover{
+	text-decoration: underline;
+}
