@@ -9,42 +9,49 @@
 		<title>DEDAL DES COULEURS</title>
 	</head>
 
-    <body>
+    <style>
+    @import url('https://fonts.cdnfonts.com/css/sansation');
+</style>
+                
+
+    <body class="page1">
         <!-- Haut de ma page -->
         <div id="Top">
             <header>
-                <div id="image-entete">
                     <img src="images/Image-entete.jpg" alt="Image du bâtiment de la galerie DEDAL DES COULEURS"/>
-                </div>
             </header>
 
-                <nav>
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="preparez-votre-visite.html">Préparez votre visite</a></li>
-                        <li><a href="#">Exposition du moment</a></li>
-                        <li><a href="#">S'inscrire</a></li>
-                    </ul>
-                </nav>
 
-                <hr>   
+                <div class="navbar">
+                    <a class="accueil" href="index.html">Accueil</a>
+                    <a class="visite" href="preparez-votre-visite.html">Préparez votre visite</a>
+                    <a class="expo" href="exposition-du-moment.html">Exposition du moment</a>
+                    <a href="#">S'inscrire</a>
+                </div>
         </div>
 
+        <br>
+        <br>
+
+
         <section id="expo-du-moment">
-            <h1>Exposition du moment</h1>
-            <div class="photo-expo">
-                <img src="images/image1-Expo-VVG.jpg" alt="Photo de l'exposition Lumières de Provence"/>
-            </div>
-            <div class="texte-presentation-expo">
-                <h2>Lumières de Provence : La magie de Van Gogh</h2>
-                <p>Vernissage : 5 avril 2023</p>
-                <p>Ouverture au public : Du 6 avril au 30 juin 2023</p>
-                <button>En savoir plus</button>
+            <h2><u id="soulignement-titre">Expos</u>ition du moment</h2>
+            <div class="exposition-du-moment">
+                <div class="photo-expo">
+                    <img src="images/1_VVG.png" alt="Photo de l'exposition Lumières de Provence"/>
+                </div>
+                <div class="texte-presentation-expo">
+                    <h3 id="lumiere-de-provence">Lumières de Provence : La magie de Van Gogh</h3>
+                    <p class="vernissage"><b><u>Vernissage</u></b> : 5 avril 2023</p>
+                    <p class="ouverture-public"><b><u>Ouverture au public</u></b> : Du 6 avril au 30 juin 2023</p>
+                     <button type="button" onclick="window.location.href = 'exposition-du-moment.html';">En savoir plus</button>
+                </div>
             </div>
         </section>
 
+
         <section id="preparez-votre-visite">
-            <h1>Préparez votre visite</h1>
+            <h2><u id="soulignement-titre">Prépa</u>rez votre visite</h2>
             <div class="colonnes">
                 <div class="colonne-notre-galerie">
                     <span class="icone-musee"><i class="fa-solid fa-building-columns"></i></span>
@@ -64,7 +71,7 @@
         </section>
 
         <section id="inscription-newsletter">
-            <h1>Incription à notre newsletter</h1>
+            <h2><u id="soulignement-titre">Inscrip</u>tion à notre newsletter</h2>
             <div class="newsletter">
                 <div class="texte-newsletter">
                     <p>Pour suivre toute l’actualité du musée DEDAL DES COULEURS inscrivez-vous ici ! Événements, expositions, informations pratiques... Vous recevrez notre newsletter et à vous pouvez à tout moment vous désinscrire.</p>
@@ -73,16 +80,21 @@
                 <div class="formulaire">
                     <form>
                         <div id="bloc0">
-                            <p class="zone1">Nom :</p>
-                            <p class="zone2">Prénom :</p>
-                            <p class="zone1">Adresse Mail :</p>
+                            <p class="zone1">Votre nom :</p>
+                            <p class="zone0"><input type="text" name="nom" placeholder="Ex. POLLET" required/></p>
+                            <p class="zone1">Votre prénom :</p>
+                            <p class="zone0"><input type="text" name="prenom" placeholder="Ex. Pierre"/></p>
+                            <p class="zone1">Votre adresse mail :</p>
+                            <p class="zone0"><input type="mail" name="mail" placeholder="Ex. pierre.pollet@gmail.com" required/></p>
+                            <p class="zone4"><input type="checkbox" id="case" name="case" value="abonnement" required/>
+                                <label for="case" aria-describedby="case">Je m'abonne à la newsletter ! Désabonnement disponible dans chaque envoi.</label></p>
+                            <p class="zone0"><input type="submit" id="envoi" value="Je m'abonne"/></p>
                         </div>
                         <div id="bloc1">
-                            <p class="zone0"><input type="text" name="nom" placeholder="Indiquez votre nom" required/></p>
-                            <p class="zone0"><input type="text" name="prenom" placeholder="Indiquez votre prénom"/></p>
-                            <p class="zone0"><input type="mail" name="mail" placeholder="Indiquez votre adresse mail" required/></p>
-                            <p class="zone01"><input type="checkbox" name="sexe" value="abonnement" required/>Je m'abonne à la newsletter ! Désabonnement disponible dans chaque envoi. </p>
-                            <p class="zone0"><input type="submit" id="envoi" value="Je m'abonne"/></p>
+                            
+                            
+                            
+                            
                         </div>
                     </form>
                 </div>
@@ -93,13 +105,11 @@
 
         <footer>
             <div class="colonne-pdp">
-                <div class="logo-pdp">
-                    <img src="images/Logo-DDC.png" alt="Logo DDC"/>
-                </div>
+                <div class="logo-pdp"><img src="images/Logo-DDC.png" alt="Logo DDC"/></div>
                 <div class="contact">
-                    <h2>Nous contacter</h2>
+                    <h3>Nous contacter</h3>
                     <p>10 Rue de la République <br> 75000 Paris</p>
-                    <span class="contact-telephone">
+                    <span id="contact-telephone">
                         <span class="icone-telephone"><i class="fa-solid fa-phone"></i></span>
                         <p>01.63.45.85.56</p>
                     </span>
@@ -109,7 +119,7 @@
                     </span>
                     <span id="contact-mail">
                         <span class="icone-mail"><i class="fa-solid fa-envelope"></i></span>
-                        <p>dedal@gmail.com</p> 
+                        <p><a class="mail" href="mailto:dedal@gmail.com">dedal@gmail.com</a></p>
                     </span>
                     <p>Responsable : M. Paul DECHEWSKY</p>
                 </div>
