@@ -10,7 +10,12 @@
 	</head>
 
 
-    <body>
+    <style>
+    @import url('https://fonts.cdnfonts.com/css/sansation');
+</style>
+
+    <body class="page2">
+
         <!-- Haut de ma page -->
         <div id="Top">
             <header>
@@ -18,39 +23,39 @@
                     <img src="images/Logo-DDC.png" alt="Logo DDC"/>
                 </div>
             </header>
-
-            <nav>
-                <ul>
-                	<li><a href="#">Accueil</a></li>
-                	<li><a href="#">Préparez votre visite</a></li>
-                	<li><a href="#">Exposition du moment</a></li>
-               		<li><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
-                <hr>
+                <div class="navbar">
+                    <a class="accueil" href="index.html">Accueil</a>
+                    <a class="visite" href="preparez-votre-visite.html">Préparez votre visite</a>
+                    <a class="expo" href="exposition-du-moment.html">Exposition du moment</a>
+                    <a href="#">S'inscrire</a>
+                </div>
         </div>
 
 
         <div class="titre-page">
-        	<img src="images/salle3-galerie.jpg" alt="salle 3"/>
-        	<div class=text-sur-image><h1>Préparez votre visite</h1></div>
+            <h1>Préparez votre visite</h1>
         </div>
 
 
         <section id="notre-galerie-page">
-            <h1>Notre galerie</h1>
+            <h2><u id="soulignement-titre">Notre g</u>alerie</h2>
             <div class="bloc-presentation-de-la-galerie">
-            	<div class="text-presentation-et-paul">
+                <div class="titre-presentation-galerie">
+                    <h3>La galerie DEDAL Des Couleurs</h3>
+                </div>
+            	<div class="texte-presentation-et-paul">
             		<p>Depuis son plus jeune âge, Paul DECHEWSKY est passionné de peintures. 1933, il ouvre sa galerie d’art
 “DEDAL DES COULEURS” à Paris.
 Dans sa galerie, il expose et vend ses propres oeuvres mais aussi celles d’artistes impressionnistes de
 grandes renommée tels que Monet, Renoir ou encore Van Gogh.
 Aujourd’hui, on compte 3 salariés dévoués qui travaillent pour la galerie.
-
+<br>
+<br>
 L’année 2022 a été un réel succès pour DEDAL Des Couleurs, grâce au travail acharné de M. DECHEWSKY et
 de ses salariés. Son chiffre d’affaires est de 3 500 000€.</p>
 					<img src="images/Paul-Dechewsky.png" alt="Paul DECHEWSKY"/>
             	</div>
+                <br>
             	<span class="images-galerie">
             		<img src="images/salle1-galerie.jpg" alt="Salle 1"/>
             		<img src="images/Salle2-galerie.jpg" alt="Salle 2"/>
@@ -59,17 +64,17 @@ de ses salariés. Son chiffre d’affaires est de 3 500 000€.</p>
         </section>
 
         <section id="horaires-et-tarifs">
-            <h1>Horaires & tarifs</h1>
-            <div class="bloc-horaires-et-tatifs">
-            	<h2>Horaires et jours d'ouverture</h2>
+            <h2><u id="soulignement-titre">Horair</u>es & tarifs</h2><h1></h1>
+            <div class="bloc-horaires-et-tarifs">
+            	<h3>Horaires et jours d'ouverture</h3>
             	<span class="bloc-image-texte-horaires">
             		<img src="images/Horaires-jours-ouverture.png" alt="Bulle horloge et calendrier"/>
             		<p>La galerie est ouverte tous les jours, sauf le lundi de 9h30 à 18h30.
 Pour information, la dernière admission se fait 1 h avant la fermeture.
-L' évacuation des salles commence 30 min avant la fermeture.</p>
+<br><br>L' évacuation des salles commence 30 min avant la fermeture.</p>
             	</span>
             	<hr class="ligne violette">
-            	<h2>Tarifs</h2>
+            	<h3>Tarifs</h3>
             	<table>
             		<tbody>
             			<tr>
@@ -135,13 +140,11 @@ L' évacuation des salles commence 30 min avant la fermeture.</p>
 
         <footer>
             <div class="colonne-pdp">
-                <div class="logo-pdp">
-                    <img src="images/Logo-DDC.png" alt="Logo DDC"/>
-                </div>
+                <div class="logo-pdp"><img src="images/Logo-DDC.png" alt="Logo DDC"/></div>
                 <div class="contact">
-                    <h2>Nous contacter</h2>
+                    <h3>Nous contacter</h3>
                     <p>10 Rue de la République <br> 75000 Paris</p>
-                    <span class="contact-telephone">
+                    <span id="contact-telephone">
                         <span class="icone-telephone"><i class="fa-solid fa-phone"></i></span>
                         <p>01.63.45.85.56</p>
                     </span>
@@ -151,7 +154,7 @@ L' évacuation des salles commence 30 min avant la fermeture.</p>
                     </span>
                     <span id="contact-mail">
                         <span class="icone-mail"><i class="fa-solid fa-envelope"></i></span>
-                        <p>dedal@gmail.com</p> 
+                        <p><a class="mail" href="mailto:dedal@gmail.com">dedal@gmail.com</a></p>
                     </span>
                     <p>Responsable : M. Paul DECHEWSKY</p>
                 </div>
