@@ -8,8 +8,11 @@
   		</script>
 		<title>DEDAL DES COULEURS - Exposition du moment</title>
 	</head>
+    <style>
+    @import url('https://fonts.cdnfonts.com/css/sansation');
+</style>
 
-    <body>
+    <body class="page3">
         <!-- Haut de ma page -->
         <div id="Top">
             <header>
@@ -18,15 +21,12 @@
                 </div>
             </header>
 
-            <nav>
-                <ul>
-                	<li><a href="#">Accueil</a></li>
-                	<li><a href="#">Préparez votre visite</a></li>
-                	<li><a href="#">Exposition du moment</a></li>
-               		<li><a href="#">S'inscrire</a></li>
-                </ul>
-            </nav>
-                <hr>
+                <div class="navbar">
+                    <a class="accueil" href="index.html">Accueil</a>
+                    <a class="visite" href="preparez-votre-visite.html">Préparez votre visite</a>
+                    <a class="expo" href="exposition-du-moment.html">Exposition du moment</a>
+                    <a href="#">S'inscrire</a>
+                </div>
         </div>
 
 
@@ -137,7 +137,37 @@
         </section>
 
 
-
+        <footer>
+            <div class="colonne-pdp">
+                <div class="logo-pdp"><img src="images/Logo-DDC.png" alt="Logo DDC"/></div>
+                <div class="contact">
+                    <h3>Nous contacter</h3>
+                    <p>10 Rue de la République <br> 75000 Paris</p>
+                    <span id="contact-telephone">
+                        <span class="icone-telephone"><i class="fa-solid fa-phone"></i></span>
+                        <p>01.63.45.85.56</p>
+                    </span>
+                    <span id="contact-fax">
+                        <span class="icone-fax"><i class="fa-solid fa-fax"></i></span>
+                        <p>01.63.45.78.52</p>
+                    </span>
+                    <span id="contact-mail">
+                        <span class="icone-mail"><i class="fa-solid fa-envelope"></i></span>
+                        <p><a class="mail" href="mailto:dedal@gmail.com">dedal@gmail.com</a></p>
+                    </span>
+                    <p>Responsable : M. Paul DECHEWSKY</p>
+                </div>
+                <div class="mentions-legales">
+                    <p>Mentions légales</p>
+                    <p>Gestion des cookies</p>
+                    <span id="logo-reseaux-sociaux">
+                        <span class="icone-facebook"><i class="fa-brands fa-facebook"></i></span>
+                        <span class="icone-x"><i class="fa-brands fa-x-twitter"></i></span>
+                        <span class="icone-instagram"><i class="fa-brands fa-instagram"></i></span>
+                    </span>
+                </div>
+            </div>
+        </footer>
 
 
 </body>
