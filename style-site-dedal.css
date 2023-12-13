@@ -485,23 +485,6 @@ th{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 footer{
 	background-color: black;
@@ -560,4 +543,148 @@ footer .mail{
 
 footer .mail:hover{
 	text-decoration: underline;
+}
+
+
+
+
+@media screen and (max-width:1000px){
+	#expo-du-moment img{
+		width: 50%;
+		text-align: center;
+	}
+	.exposition-du-moment{
+		display: block;
+		text-align: center;
+	}
+	.lumiere-de-provence, .vernissage, .ouverture-public{
+		padding-top: 0;
+	}
+	.ouverture-public{
+		padding-bottom: 0;
+	}
+
+	.colonnes{
+		display: block;
+	}
+
+	.colonne-notre-galerie, .colonne-horaires-tarifs{
+		margin-bottom: 10em;
+	}
+
+	.newsletter{
+		display: block;
+		padding: 10px;
+	}
+	.formulaire input[type="text"], input[type="mail"] {
+		padding: 20px;
+		width:50%;
+}
+	.formulaire input[type="submit"]{
+		vertical-align: middle;
+	}
+
+
+.texte-presentation-et-paul{
+	display: block;
+		text-align: center;
+}
+.texte-presentation-et-paul img{
+	width:80%;
+}
+.images-galerie{
+	display: block;
+	text-align: center;
+}
+.images-galerie img{
+	width: 90%;
+}
+.bloc-image-texte-horaires{
+	display: block;
+	text-align: center;
+}
+.bloc-image-texte-horaires img{
+	width: 40%;
+	margin: auto;
+}
+table{
+	width: auto;
+	text-align: center;
+}
+    table tr{
+    margin-bottom: 40px;
+    }
+
+    table td {
+    text-align: right;
+    }
+.services1, .services2{
+	display: block;
+	padding: 0;
+
+}
+.blocs-services{
+	padding: 30px;
+	width: auto;
+	margin-bottom: 10em;
+}
+
+.lumiere-de-provence{
+	margin:30px;
+}
+.informations-exposition{
+	display: block;
+}
+.bloc-description{
+	padding: 20px;
+}
+.bloc-texte-et-image-description{
+	display: block;
+	text-align: center;
+}
+.bloc-texte-et-image-description img{
+	width: 50%;
+}
+.texte-presentation-generale{
+	text-align: center;
+	padding: 30px;
+}
+
+#ligne-tableaux{
+	display: block;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+.exemples-tableaux img{
+	width: 100%;
+}
+#ligne-tableaux p{
+	font-size: 1em;
+	line-height : 0.3em;
+	font-style: italic;
+	width: 100%;
+}
+
+.exemples-tableaux{
+	display: block;
+	margin:5em;
+}
+
+.amandier, .crâne, .tournesols, .arbre-et-sous-bois, .portrait, .iris, .chambre, .nuit-etoilee, .iris{
+	padding-bottom: 5em;
+}
+
+
+  footer .colonne-pdp{
+  	display: block;
+  	text-align: center;
+  }
+  footer{
+  	padding: 30px;
+  }
+  footer .mentions-legales{
+  	padding-top: 30px;
+  }
+
 }
